@@ -25,15 +25,12 @@
 			   text-align: center;
 			   border-radius: 8px;
 		   }
-		#page.home .header div, #page.home .body div, #page.home .footer div, #page.about .header div, #page .header div, #page.about .body div, #page.about .footer div, #page.about .section div {
+		.header div, .body div, .footer div, #page.about .header div, .header div,.body div, .footer div, .section div {
 		margin: 0 auto;
 		max-width: none;
 		overflow: hidden;
 		padding: 5px;
 		width: 95%;
-	}
-	#page.home .header div img.satellite{
-		left: 2px;
 	}
 	#page.home .header div h1 {
 		float: none;
@@ -265,11 +262,11 @@
 		display: block;
 		float: left;
 		height: 60px;
-		margin: 0;
+		margin: 0, 0, 10px,0;
 		padding: 0;
 		width: 50%;
 	}
-	#header div span#mobile-navigation {
+	#navigation {
 		background: transparent url(../images/mobile/mobile-menu.png) no-repeat;
 		display: block;
 		height: 50px;
@@ -281,10 +278,10 @@
 		width: 50px;
 		z-index: 999;
 	}
-	#header div > ul#navigation {
+	#navigation {
 		background-image: none;
-		background: #04A2FF;
-		border: 1px solid #f1f2f2;
+		background: #000000;
+		border: 1px solid #000000;
 		border-radius: 0;
 		display: none;
 		float: none;
@@ -296,9 +293,9 @@
 		width: 40%;
 		z-index: 1000;
 	}
-	#header div > ul#navigation > li {
+	#navigation > li {
 		border-left: 0;
-		border-top: 1px solid #f1f2f2;
+		border-top: 1px solid #000000;
 		margin: 0;
 		height: auto;
 		padding: 0;
@@ -306,15 +303,15 @@
 		text-align: left;
 		width: 100%;
 	}
-	#header div > ul#navigation > li:first-child {
+	#navigation > li:first-child {
 		border-top: 0;
 	}
-	#header div > ul#navigation > li:hover {
+	#navigation > li:hover {
 		background-color: transparent;
 	}
-	#header div ul#navigation li a {
+	#navigation li a {
 		border: none;
-		color: #01E81A;
+		color: #000000;
 		display: block;
 		font-family: Helvetica;
 		font-size: 1.125em;
@@ -336,10 +333,10 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		width: 50px;
+		width: 20px;
 		z-index: 0;
 	}
-	#header div ul#navigation li ul {
+	navigation li ul {
 		background: none;
 		border-top: 1px solid #f1f2f2;
 		padding: 0;
@@ -349,15 +346,15 @@
 		width: 100%;
 		z-index: 999;
 	}
-	#header div ul#navigation li ul, #header div ul#navigation li:hover ul {
+	#navigation li:hover ul {
 		display: none;
 	}
-	#header div ul#navigation li {
+	#navigation li {
 		height: auto;
 		width: 100%;
 		z-index: 40;
 	}
-	#header div ul#navigation li ul li {
+	#navigation li ul li {
 		background: rgb(3, 40, 109);
 		border-top: 1px solid #f1f2f2;
 		display: block;
@@ -367,28 +364,28 @@
 		text-align: left;
 		width: 100%;
 	}
-	#header div ul#navigation li ul li:first-child {
+	#navigation li ul li:first-child {
 		border: none;
 	}
-	#header div ul#navigation li ul li a {
+	#navigation li ul li a {
 		background: rgb(3,40,109);
-		color: #01E81A;
-		padding-left: 20px;
+		color: #ffffff;
+		padding-left: 10px;
 		text-align: left;
 		text-decoration: none;
 		width: auto;
 	}
-	#header div ul#navigation li:hover a, #header div ul#navigation li.selected a, #header div ul#navigation li:hover ul li a, #header div ul#navigation li:hover ul li a:hover, #header div ul#navigation li ul li.selected a {
+	#navigation li:hover a, #navigation li.selected a, #navigation li:hover ul li a, #navigation li:hover ul li a:hover, #navigation li ul li.selected a {
 		display: block;
 	}
-	#header div ul#navigation li.selected > a {
+	#navigation li.selected > a {
 		background: rgb(3, 40, 109);
-		color: #FFF304;
+		color: #000000;
 		text-decoration: none;
 		font-weight: bold;
 	}
-	#header div ul li.selected a, #header div ul li.selected a:hover, #header div ul li.menu ul#selected li.selected a {
-		color: #01E81A;
+	ul li.selected a, ul li.selected a:hover, ul li.menu ul#selected li.selected a {
+		color: #000000;
 		text-decoration: none;
 	}
 }
