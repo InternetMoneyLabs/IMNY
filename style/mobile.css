@@ -278,24 +278,8 @@
 		width: 50px;
 		z-index: 999;
 	}
-	#navigation {
-		background-image: none;
-		background: #000000;
-		border: 1px solid #000000;
-		border-radius: 0;
-		display: none;
-		float: none;
-		height: auto;
-		padding: 0;
-		position: absolute;
-		right: 3%;
-		top: 64px;
-		width: 40%;
-		z-index: 1000;
-	}
 	#navigation > li {
 		border-left: 0;
-		border-top: 1px solid #000000;
 		margin: 0;
 		height: auto;
 		padding: 0;
@@ -311,7 +295,7 @@
 	}
 	#navigation li a {
 		border: none;
-		color: #000000;
+		color: #ffffff;
 		display: block;
 		font-family: Helvetica;
 		font-size: 1.125em;
@@ -327,7 +311,6 @@
 	}
 	#header div .mobile-submenu {
 		background: rgb(3, 40, 109) url(../images/mobile/mobile-expand.png) no-repeat center;
-		border-left: 1px solid #f1f2f2;
 		display: inline-block;
 		height: 3.4em;
 		position: absolute;
@@ -338,7 +321,6 @@
 	}
 	navigation li ul {
 		background: none;
-		border-top: 1px solid #f1f2f2;
 		padding: 0;
 		position: static;
 		right: 0;
@@ -355,8 +337,8 @@
 		z-index: 40;
 	}
 	#navigation li ul li {
-		background: rgb(3, 40, 109);
-		border-top: 1px solid #f1f2f2;
+		background: rgb(0, 2, 4);
+		color: #ffffff;
 		display: block;
 		height: auto;
 		margin: 0;
@@ -366,6 +348,7 @@
 	}
 	#navigation li ul li:first-child {
 		border: none;
+		color: #ffffff;
 	}
 	#navigation li ul li a {
 		background: rgb(3,40,109);
@@ -380,12 +363,12 @@
 	}
 	#navigation li.selected > a {
 		background: rgb(3, 40, 109);
-		color: #000000;
+		color: #ffffff;
 		text-decoration: none;
 		font-weight: bold;
 	}
 	ul li.selected a, ul li.selected a:hover, ul li.menu ul#selected li.selected a {
-		color: #000000;
+		color: #ffffff;
 		text-decoration: none;
 	}
 }
